@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Voting App</title>
+</head>
+
+<body>
+    <header>
+        <h1>Vote for Your Favorite Candidate - <i>Make The Right Choice</i></h1>
+    </header>
+
+    <main>
+        <div id="accreditedUsers">
+        <h2>Accreditated Voters:</h2>
+
+            <!-- Add a list of accredited users here -->
+            <ul id="accreditedUsersList">
+                <li>User1</li>
+                <li>User2</li>
+                <li>User3</li>
+                <!-- Add more users as needed -->
+            </ul>
+        </div>
+
+        <div id="votingOptions">
+            <h2>Candidates:</h2>
+            <div class="option">
+                <input type="radio" name="voteOption" id="option1" value="Eric Iyke">
+                <label for="option1">Eric Iyke</label>
+            </div>
+
+            <div class="option">
+                <input type="radio" name="voteOption" id="option2" value="Peter Obi">
+                <label for="option2">Peter Obi</label>
+            </div>
+
+            <div class="option">
+                <input type="radio" name="voteOption" id="option3" value="Tinubu">
+                <label for="option3">Tinubu</label>
+            </div>
+
+            <!-- Add more options as needed -->
+        </div>
+
+        <button id="voteButton">Vote</button>
+        <button id="addUserButton">Get Accredited To Vote</button>
+        <button id="viewResultsButton">View Results</button>
+        <button onclick="clearResults()">Clear Results</button>
+
+
+        <div id="result">
+            <h2>Make The Right Choice (Your Vote Is Your Power)</h2>
+            <ul id="resultList">
+                <!-- The voting results will be dynamically updated here -->
+            </ul>
+        </div>
+        <div id="displayProfile"></div>
+        <button id="viewProfile">Profile</button>
+         <button id="logoutBtn">Logout</button>
+    </main>
+    <script src="vote.js"></script>
+</body>
+
+</html>
